@@ -42,7 +42,7 @@ class Text:
 paragraph_text = Preset()
 print(paragraph_text)
 
-message = "Hello my name is Kevin"
+message = "Hello"
 text = Text(text=message, preset=paragraph_text, pos=Vector2(100, 2), colorPreset=ColorPreset(bg_color="#327355", fg_color="#FFFFFF"), size=Vector2(10, 5))
 text2 = Text(text=message, preset=paragraph_text, pos=Vector2(100, 100), colorPreset=ColorPreset(bg_color="#327355", fg_color="#FFFFFF"), size=Vector2(10, 5))
 
