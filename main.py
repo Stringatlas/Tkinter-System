@@ -35,15 +35,13 @@ class Text:
         self.textWidget.place(x=pos.x, y=pos.y)
 
 
+if __name__ == "__main__":
+    paragraph_text = Preset()
+    print(paragraph_text)
+    colorSet = ColorPreset(bg_color="#327355", fg_color="#FFFFFF")
+    message = "Hello"
+    message2 = "Hello world, this is python"
+    text = Text(text=message, preset=paragraph_text, pos=Vector2(100, 2), colorPreset=colorSet, size=Vector2(10, 5))
+    text2 = Text(text=message2, preset=paragraph_text, pos=Vector2(100, 100), colorPreset=colorSet, size=Vector2(20, 5))
 
-
-
-
-paragraph_text = Preset()
-print(paragraph_text)
-
-message = "Hello"
-text = Text(text=message, preset=paragraph_text, pos=Vector2(100, 2), colorPreset=ColorPreset(bg_color="#327355", fg_color="#FFFFFF"), size=Vector2(10, 5))
-text2 = Text(text=message, preset=paragraph_text, pos=Vector2(100, 100), colorPreset=ColorPreset(bg_color="#327355", fg_color="#FFFFFF"), size=Vector2(10, 5))
-
-window.mainloop()
+    window.mainloop()
